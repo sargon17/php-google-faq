@@ -8,11 +8,36 @@ include "faq_data.php"; ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
     <title>Domande frequenti</title>
 </head>
+<style>
+    body{
+        background-color: #f2f2f2;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #3d3d3d;
+    }
+    .qa_list{
+    width: 50vw;
+    list-style: none;
+    margin: 100px auto;
+    }
+
+    .qa_list h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 40px;
+        padding: 0;
+ 
+    }
+</style>
 
 <body>
-    <ul>
+    <ul class="qa_list">
         <?php foreach ($faq_data as $faq) {
           echo "<li>";
           echo "<h3>" . $faq["question"] . "</h3>";
