@@ -23,7 +23,11 @@ include "faq_data.php"; ?>
     .qa_list{
     width: 50vw;
     list-style: none;
+    padding: 0;
     margin: 100px auto;
+    }
+    .qa_list li{
+        margin: 20px 0;
     }
 
     .qa_list h3{
@@ -32,7 +36,26 @@ include "faq_data.php"; ?>
         margin: 0;
         margin-top: 40px;
         padding: 0;
- 
+    }
+    .qa_list h4{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .qa_list p, .qa_list li{
+        line-height: 1.3;
+    }
+    @media screen and (max-width: 768px){
+
+        body{
+            font-size: 12px;
+        }
+        .qa_list{
+            width: 80vw;
+        }
+
+        
     }
 </style>
 
